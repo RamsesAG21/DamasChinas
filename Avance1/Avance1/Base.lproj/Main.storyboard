@@ -231,7 +231,7 @@
             <objects>
                 <viewController id="9Tu-pK-Ci6" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dkz-qI-cny">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Ganador" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jsh-Fd-bMb">
@@ -479,6 +479,15 @@
                                     <segue destination="BYZ-38-t0r" kind="showDetail" id="g0D-au-Yfz"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dTf-Xy-XPV">
+                                <rect key="frame" x="280" y="41" width="47" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="Fin"/>
+                                <connections>
+                                    <segue destination="9Tu-pK-Ci6" kind="modal" id="9Ui-ga-TBQ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="jdF-wE-cuw"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -491,7 +500,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="gkm-bf-F9g"/>
+        <segue reference="g0D-au-Yfz"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="375" width="140" height="186"/>
