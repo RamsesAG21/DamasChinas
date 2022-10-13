@@ -9,13 +9,34 @@ import UIKit
 
 class ViewControllerOpciones: UIViewController {
 
+    @IBOutlet weak var scrollMusica: UISlider!
+    @IBOutlet weak var scrollSonido: UISlider!
+    @IBOutlet weak var Vibracion: UISwitch!
+    
+    @IBOutlet weak var btguardar: UIButton!
+    var currMusica: Float!
+    var currSonido: Float!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
         
         preferredContentSize = CGSize(width: 280, height: 390)
+        
+        //scrollMusica.value = currMusica
+        //scrollSonido.value = currSonido
+        
+        
     }
+    
+    
+//    @IBAction func guardarOpcionesSonido(_ sender: UIButton) {
+//        let vistaInicial = presentingViewController as! ViewController
+//        vistaInicial.opcionesActualesSonido(musica: scrollMusica.value,sonido: scrollSonido.value)
+//    }
+    
     
 
     /*
