@@ -14,15 +14,18 @@ class ViewController: UIViewController, UIPopoverPresentationControllerDelegate 
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
+    func opcionesActualesSonido (musica: Float, sonido: Float){
+        
+    }
     
     func adaptivePresentationStyle(for controller: UIPresentationController) -> UIModalPresentationStyle {
         return .none
     }
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let vistaOpciones = segue.destination as! ViewControllerOpciones
-        vistaOpciones.popoverPresentationController?.delegate = self
-    }
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//        let vistaOpciones = segue.destination as! ViewControllerOpciones
+//        vistaOpciones.popoverPresentationController?.delegate = self
+//    }
 
 
 }
