@@ -13,6 +13,8 @@ class ViewControllerOpciones: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        preferredContentSize = CGSize(width: 280, height: 390)
     }
     
 
