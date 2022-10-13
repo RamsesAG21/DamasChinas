@@ -8,11 +8,15 @@
 import UIKit
 
 class ViewControllerTutorial: UIViewController {
-
+    
+    @IBOutlet weak var scrollview: UIScrollView!
+    @IBOutlet weak var vView: UIView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        scrollview.contentSize = vView.frame.size
     }
     
 
