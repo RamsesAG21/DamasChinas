@@ -24,18 +24,6 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="msv-55-6JA">
-                                <rect key="frame" x="153" y="316" width="68" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="tintColor" systemColor="systemRedColor"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Jugar"/>
-                                <connections>
-                                    <segue destination="Jmd-Nd-wAb" kind="popoverPresentation" popoverAnchorView="msv-55-6JA" id="0ZB-RL-awz">
-                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
-                                    </segue>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kWU-A8-zl6">
                                 <rect key="frame" x="147" y="464" width="81" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -74,6 +62,17 @@
                                     <segue destination="ndc-W1-yZo" kind="showDetail" id="1ta-aS-g7H"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T9t-qx-vBI">
+                                <rect key="frame" x="134" y="222" width="164" height="200"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="375"/>
+                                <connections>
+                                    <segue destination="Jmd-Nd-wAb" kind="popoverPresentation" popoverAnchorView="T9t-qx-vBI" id="ywq-6W-mzx">
+                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                    </segue>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -82,7 +81,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="105" y="-9"/>
+            <point key="canvasLocation" x="104.8" y="-9.4452773613193415"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Rga-IE-Qws">
@@ -430,6 +429,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="375" width="140" height="186"/>
         <image name="Damas imagen" width="420" height="468"/>
         <image name="arrowshape.turn.up.backward.2.fill" catalog="system" width="128" height="86"/>
         <image name="pencil" catalog="system" width="128" height="113"/>
