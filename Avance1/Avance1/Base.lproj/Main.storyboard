@@ -45,7 +45,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <buttonConfiguration key="configuration" style="tinted" image="pencil" catalog="system" title=""/>
                                 <connections>
-                                    <segue destination="3ld-Lt-eRa" kind="presentation" id="evv-0K-I7l"/>
+                                    <segue destination="3ld-Lt-eRa" kind="popoverPresentation" identifier="segueOpciones" popoverAnchorView="ckj-wy-nmQ" id="evv-0K-I7l">
+                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES"/>
+                                    </segue>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ney-PZ-lc9">
@@ -73,57 +75,60 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="cXP-Hj-85o"/>
+                    <connections>
+                        <outlet property="btOpciones" destination="ckj-wy-nmQ" id="oXs-Sn-srH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="104.8" y="-9.4452773613193415"/>
         </scene>
-        <!--View Controller-->
+        <!--View Controller Opciones-->
         <scene sceneID="Rga-IE-Qws">
             <objects>
-                <viewController id="3ld-Lt-eRa" sceneMemberID="viewController">
+                <viewController id="3ld-Lt-eRa" customClass="ViewControllerOpciones" customModule="Avance1" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Z62-gU-NFA">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                        <rect key="frame" x="0.0" y="0.0" width="280" height="390"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Opciones" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X6e-gI-QTq">
-                                <rect key="frame" x="142" y="127" width="91" height="27"/>
+                                <rect key="frame" x="101" y="27" width="91" height="27"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qLz-DI-f1D">
-                                <rect key="frame" x="148" y="181" width="79" height="35"/>
+                                <rect key="frame" x="107" y="81" width="79" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" systemColor="systemGreenColor"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Musica"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZAn-80-jq0">
-                                <rect key="frame" x="149" y="267" width="77" height="35"/>
+                                <rect key="frame" x="108" y="167" width="77" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" systemColor="systemGreenColor"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Sonido"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Mu-32-saD">
-                                <rect key="frame" x="139" y="378" width="96" height="35"/>
+                                <rect key="frame" x="98" y="278" width="96" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" systemColor="systemGreenColor"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Vibracion"/>
                             </button>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="V33-a7-Py7">
-                                <rect key="frame" x="163" y="421" width="49" height="31"/>
+                                <rect key="frame" x="122" y="321" width="49" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </switch>
                             <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="w2k-6t-bhh">
-                                <rect key="frame" x="127" y="224" width="118" height="30"/>
+                                <rect key="frame" x="86" y="124" width="118" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </slider>
                             <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="W1X-gV-0TZ">
-                                <rect key="frame" x="128" y="310" width="118" height="30"/>
+                                <rect key="frame" x="87" y="210" width="118" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </slider>
                         </subviews>
@@ -131,6 +136,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="nXK-UA-nIT"/>
+                    <size key="freeformSize" width="280" height="390"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aJY-OJ-ZLc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -354,6 +360,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" systemColor="systemRedColor"/>
                                 <buttonConfiguration key="configuration" style="tinted" image="questionmark" catalog="system" title=""/>
+                                <connections>
+                                    <segue destination="zp3-ck-Es7" kind="presentation" id="rUR-Oo-cCc"/>
+                                </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Damas imagen" translatesAutoresizingMaskIntoConstraints="NO" id="w7N-Mz-XH9">
                                 <rect key="frame" x="0.0" y="142" width="375" height="307"/>
@@ -380,6 +389,9 @@
             <point key="canvasLocation" x="2013.5999999999999" y="13.943028485757123"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="PBW-15-bwf"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="375" width="140" height="186"/>
         <image name="Damas imagen" width="420" height="468"/>
