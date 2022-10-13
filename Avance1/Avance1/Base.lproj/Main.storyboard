@@ -70,9 +70,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="375"/>
                                 <connections>
-                                    <segue destination="Jmd-Nd-wAb" kind="popoverPresentation" popoverAnchorView="T9t-qx-vBI" id="ywq-6W-mzx">
-                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
-                                    </segue>
+                                    <segue destination="Jmd-Nd-wAb" kind="presentation" id="ywq-6W-mzx"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -86,7 +84,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="104.8" y="-9.4452773613193415"/>
+            <point key="canvasLocation" x="106" y="14"/>
         </scene>
         <!--View Controller Opciones-->
         <scene sceneID="Rga-IE-Qws">
@@ -190,11 +188,6 @@
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="tinted" image="pencil" catalog="system"/>
-                                                <connections>
-                                                    <segue destination="3ld-Lt-eRa" kind="popoverPresentation" popoverAnchorView="0nC-j6-WwT" id="WLO-od-D2g">
-                                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
-                                                    </segue>
-                                                </connections>
                                             </button>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="375" translatesAutoresizingMaskIntoConstraints="NO" id="CMF-Lj-Dq4">
                                                 <rect key="frame" x="117" y="84" width="140" height="186"/>
@@ -258,7 +251,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="P8M-y8-Qa4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="900" y="-679.61019490254876"/>
+            <point key="canvasLocation" x="1126" y="-750"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="th5-RM-kdL">
@@ -320,7 +313,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3gR-mT-R6s" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2008.8" y="-734.48275862068976"/>
+            <point key="canvasLocation" x="2014" y="-751"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="NfV-Q6-axE">
@@ -368,35 +361,25 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="elW-aW-yVN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="136.80000000000001" y="687.7061469265368"/>
+            <point key="canvasLocation" x="105" y="796"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="J8v-ya-Cfs">
             <objects>
-                <viewController id="Jmd-Nd-wAb" customClass="ViewController" customModule="Avance1" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="currentContext" id="Jmd-Nd-wAb" customClass="ViewController" customModule="Avance1" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="pA0-g0-6hE">
-                        <rect key="frame" x="0.0" y="0.0" width="290" height="400"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gV7-hi-AUR">
-                                <rect key="frame" x="16" y="20" width="47" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <buttonConfiguration key="configuration" style="tinted" image="pencil" catalog="system" title=""/>
-                                <connections>
-                                    <segue destination="3ld-Lt-eRa" kind="popoverPresentation" popoverAnchorView="gV7-hi-AUR" id="YxW-Ab-tD3">
-                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
-                                    </segue>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Cantidad de jugadores" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bbE-MW-g6h">
-                                <rect key="frame" x="38" y="80" width="215" height="27"/>
+                                <rect key="frame" x="80" y="110" width="215" height="27"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YYX-1L-o7d">
-                                <rect key="frame" x="111" y="286" width="68" height="35"/>
+                                <rect key="frame" x="153" y="316" width="68" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" systemColor="systemRedColor"/>
                                 <state key="normal" title="Button"/>
@@ -405,8 +388,13 @@
                                     <segue destination="IT0-CK-4yv" kind="showDetail" id="kLj-3B-VWk"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gV7-hi-AUR">
+                                <rect key="frame" x="2" y="0.0" width="47" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <buttonConfiguration key="configuration" style="tinted" image="pencil" catalog="system" title=""/>
+                            </button>
                             <segmentedControl opaque="NO" alpha="0.90000000000000002" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="B73-hQ-FlK">
-                                <rect key="frame" x="38" y="133" width="215" height="32"/>
+                                <rect key="frame" x="80" y="163" width="215" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemGreenColor"/>
                                 <segments>
@@ -418,7 +406,7 @@
                                 <color key="tintColor" name="AccentColor"/>
                             </segmentedControl>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Knw-x0-VIu">
-                                <rect key="frame" x="63" y="187" width="165" height="32"/>
+                                <rect key="frame" x="105" y="217" width="165" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <segments>
                                     <segment title="Automatic"/>
@@ -429,7 +417,6 @@
                         <viewLayoutGuide key="safeArea" id="zIe-2b-JQD"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <size key="freeformSize" width="290" height="400"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="J0B-H7-gfe" sceneMemberID="firstResponder"/>
             </objects>
@@ -489,7 +476,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cbH-vt-KsD" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1125.5999999999999" y="736.28185907046486"/>
+            <point key="canvasLocation" x="1137" y="796"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="5zs-C8-ItT">
@@ -539,12 +526,11 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Toh-2R-PBC" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2013.5999999999999" y="13.943028485757123"/>
+            <point key="canvasLocation" x="2014" y="14"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="PBW-15-bwf"/>
-        <segue reference="YxW-Ab-tD3"/>
+        <segue reference="rUR-Oo-cCc"/>
         <segue reference="g0D-au-Yfz"/>
     </inferredMetricsTieBreakers>
     <resources>
