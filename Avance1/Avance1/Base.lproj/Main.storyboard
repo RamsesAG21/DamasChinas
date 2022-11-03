@@ -100,10 +100,16 @@
                             <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="w2k-6t-bhh">
                                 <rect key="frame" x="81" y="115" width="118" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="slMusic:" destination="3ld-Lt-eRa" eventType="valueChanged" id="SrU-l7-ENa"/>
+                                </connections>
                             </slider>
                             <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="W1X-gV-0TZ">
                                 <rect key="frame" x="82" y="193" width="118" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="slSound:" destination="3ld-Lt-eRa" eventType="valueChanged" id="uOG-Nb-gHh"/>
+                                </connections>
                             </slider>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Musica" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LfT-s5-JK6">
                                 <rect key="frame" x="113" y="86" width="55" height="21"/>
@@ -126,18 +132,12 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EBv-RW-IBe">
-                                <rect key="frame" x="98" y="335" width="86" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                <state key="normal" title="Guardar"/>
-                                <connections>
-                                    <action selector="guardarOpcionesSonido:" destination="3ld-Lt-eRa" eventType="touchUpInside" id="CQO-70-M4Z"/>
-                                </connections>
-                            </button>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="V33-a7-Py7">
                                 <rect key="frame" x="117" y="274" width="49" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="onofVibracion:" destination="3ld-Lt-eRa" eventType="valueChanged" id="S6K-3e-Ow2"/>
+                                </connections>
                             </switch>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="yZ8-ON-wnf"/>
@@ -147,7 +147,6 @@
                     <size key="freeformSize" width="280" height="390"/>
                     <connections>
                         <outlet property="Vibracion" destination="V33-a7-Py7" id="Rld-dU-g7n"/>
-                        <outlet property="btguardar" destination="EBv-RW-IBe" id="dUW-PW-llS"/>
                         <outlet property="scrollMusica" destination="w2k-6t-bhh" id="fVX-6g-Isn"/>
                         <outlet property="scrollSonido" destination="W1X-gV-0TZ" id="4iF-Vh-o81"/>
                     </connections>
@@ -532,8 +531,8 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="rUR-Oo-cCc"/>
-        <segue reference="ONR-3E-rY8"/>
+        <segue reference="PBW-15-bwf"/>
+        <segue reference="evv-0K-I7l"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="375" width="140" height="186"/>
