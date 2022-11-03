@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		19B877F42913880F0038FB90 /* Puntacion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B877F32913880F0038FB90 /* Puntacion.swift */; };
+		19B877F6291388480038FB90 /* Opciones.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B877F5291388480038FB90 /* Opciones.swift */; };
+		19B877F8291388790038FB90 /* Fichas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B877F7291388790038FB90 /* Fichas.swift */; };
 		F81E1C8028F7CA4D004137AB /* ViewControllerReglas.swift in Sources */ = {isa = PBXBuildFile; fileRef = F81E1C7F28F7CA4D004137AB /* ViewControllerReglas.swift */; };
 		F81E1C8228F7CA7F004137AB /* ViewControllerMarcadores.swift in Sources */ = {isa = PBXBuildFile; fileRef = F81E1C8128F7CA7F004137AB /* ViewControllerMarcadores.swift */; };
 		F81E1C8428F7CAAA004137AB /* ViewControllerOpciones.swift in Sources */ = {isa = PBXBuildFile; fileRef = F81E1C8328F7CAAA004137AB /* ViewControllerOpciones.swift */; };
@@ -23,6 +26,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		19B877F32913880F0038FB90 /* Puntacion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Puntacion.swift; sourceTree = "<group>"; };
+		19B877F5291388480038FB90 /* Opciones.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Opciones.swift; sourceTree = "<group>"; };
+		19B877F7291388790038FB90 /* Fichas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fichas.swift; sourceTree = "<group>"; };
 		F81E1C7F28F7CA4D004137AB /* ViewControllerReglas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerReglas.swift; sourceTree = "<group>"; };
 		F81E1C8128F7CA7F004137AB /* ViewControllerMarcadores.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerMarcadores.swift; sourceTree = "<group>"; };
 		F81E1C8328F7CAAA004137AB /* ViewControllerOpciones.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerOpciones.swift; sourceTree = "<group>"; };
@@ -74,6 +80,9 @@
 				F8BD669B28F479B000FA1786 /* SceneDelegate.swift */,
 				F8BD669D28F479B000FA1786 /* ViewController.swift */,
 				F8BD669F28F479B000FA1786 /* Main.storyboard */,
+				19B877F32913880F0038FB90 /* Puntacion.swift */,
+				19B877F5291388480038FB90 /* Opciones.swift */,
+				19B877F7291388790038FB90 /* Fichas.swift */,
 				F81E1C8B28F7CB66004137AB /* ViewControllerGanador.swift */,
 				F81E1C8928F7CB46004137AB /* ViewControllerJuego.swift */,
 				F81E1C8728F7CB1E004137AB /* ViewControllerJugadores.swift */,
@@ -160,6 +169,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				F81E1C8628F7CAD6004137AB /* ViewControllerTutorial.swift in Sources */,
+				19B877F8291388790038FB90 /* Fichas.swift in Sources */,
+				19B877F6291388480038FB90 /* Opciones.swift in Sources */,
 				F8BD669E28F479B000FA1786 /* ViewController.swift in Sources */,
 				F81E1C8228F7CA7F004137AB /* ViewControllerMarcadores.swift in Sources */,
 				F81E1C8828F7CB1E004137AB /* ViewControllerJugadores.swift in Sources */,
@@ -168,6 +179,7 @@
 				F81E1C8428F7CAAA004137AB /* ViewControllerOpciones.swift in Sources */,
 				F8BD669C28F479B000FA1786 /* SceneDelegate.swift in Sources */,
 				F81E1C8A28F7CB46004137AB /* ViewControllerJuego.swift in Sources */,
+				19B877F42913880F0038FB90 /* Puntacion.swift in Sources */,
 				F81E1C8C28F7CB66004137AB /* ViewControllerGanador.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
