@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Inicio-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="BYZ-38-t0r" customClass="ViewController" customModule="Avance1" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Inicio" modalPresentationStyle="fullScreen" id="BYZ-38-t0r" customClass="ViewController" customModule="Avance1" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -31,9 +31,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Tutorial"/>
                                 <connections>
-                                    <segue destination="m1R-pc-sQu" kind="popoverPresentation" popoverAnchorView="kWU-A8-zl6" id="qW8-3T-240">
-                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
-                                    </segue>
+                                    <segue destination="m1R-pc-sQu" kind="presentation" identifier="MostrarTutorial" id="qW8-3T-240"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HmX-Rp-7w4">
@@ -42,7 +40,7 @@
                                 <color key="tintColor" systemColor="systemRedColor"/>
                                 <buttonConfiguration key="configuration" style="tinted" image="questionmark" catalog="system" title=""/>
                                 <connections>
-                                    <segue destination="zp3-ck-Es7" kind="showDetail" id="PBW-15-bwf"/>
+                                    <segue destination="zp3-ck-Es7" kind="show" identifier="MonstrarReglas" id="PBW-15-bwf"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ckj-wy-nmQ">
@@ -50,9 +48,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <buttonConfiguration key="configuration" style="tinted" image="pencil" catalog="system" title=""/>
                                 <connections>
-                                    <segue destination="3ld-Lt-eRa" kind="popoverPresentation" identifier="segueOpciones" popoverAnchorView="ckj-wy-nmQ" id="evv-0K-I7l">
-                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
-                                    </segue>
+                                    <segue destination="3ld-Lt-eRa" kind="presentation" identifier="MostrarOpciones" id="evv-0K-I7l"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ney-PZ-lc9">
@@ -61,7 +57,7 @@
                                 <color key="tintColor" systemColor="systemYellowColor"/>
                                 <buttonConfiguration key="configuration" style="tinted" image="star" catalog="system" title=""/>
                                 <connections>
-                                    <segue destination="ndc-W1-yZo" kind="showDetail" id="1ta-aS-g7H"/>
+                                    <segue destination="ndc-W1-yZo" kind="presentation" identifier="MostrarMarcadores" id="1ta-aS-g7H"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T9t-qx-vBI">
@@ -70,7 +66,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="375"/>
                                 <connections>
-                                    <segue destination="Jmd-Nd-wAb" kind="presentation" id="ywq-6W-mzx"/>
+                                    <segue destination="Jmd-Nd-wAb" kind="show" identifier="MostrarOpcionesJuego" id="ywq-6W-mzx"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -86,10 +82,10 @@
             </objects>
             <point key="canvasLocation" x="106" y="14"/>
         </scene>
-        <!--View Controller Opciones-->
+        <!--Opciones-->
         <scene sceneID="Rga-IE-Qws">
             <objects>
-                <viewController id="3ld-Lt-eRa" customClass="ViewControllerOpciones" customModule="Avance1" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Opciones" id="3ld-Lt-eRa" customClass="ViewControllerOpciones" customModule="Avance1" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Z62-gU-NFA">
                         <rect key="frame" x="0.0" y="0.0" width="280" height="390"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -160,10 +156,10 @@
             </objects>
             <point key="canvasLocation" x="106" y="-701"/>
         </scene>
-        <!--View Controller Tutorial-->
+        <!--Tutorial-->
         <scene sceneID="KtF-Hx-uN9">
             <objects>
-                <viewController id="m1R-pc-sQu" customClass="ViewControllerTutorial" customModule="Avance1" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Tutorial" id="m1R-pc-sQu" customClass="ViewControllerTutorial" customModule="Avance1" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="UOE-Hx-sKS">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -253,10 +249,10 @@
             </objects>
             <point key="canvasLocation" x="1126" y="-750"/>
         </scene>
-        <!--View Controller-->
+        <!--Ganador-->
         <scene sceneID="th5-RM-kdL">
             <objects>
-                <viewController id="9Tu-pK-Ci6" sceneMemberID="viewController">
+                <viewController title="Ganador" id="9Tu-pK-Ci6" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dkz-qI-cny">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -303,7 +299,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Guardar"/>
                                 <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="gkm-bf-F9g"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" identifier="GuardarPartida" id="gkm-bf-F9g"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -315,10 +311,10 @@
             </objects>
             <point key="canvasLocation" x="2014" y="-751"/>
         </scene>
-        <!--View Controller-->
+        <!--Reglas-->
         <scene sceneID="NfV-Q6-axE">
             <objects>
-                <viewController id="zp3-ck-Es7" sceneMemberID="viewController">
+                <viewController title="Reglas" id="zp3-ck-Es7" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="A3o-LU-2Iz">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -361,12 +357,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="elW-aW-yVN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="105" y="796"/>
+            <point key="canvasLocation" x="105" y="862"/>
         </scene>
-        <!--View Controller-->
+        <!--Jugadores-->
         <scene sceneID="J8v-ya-Cfs">
             <objects>
-                <viewController modalPresentationStyle="currentContext" id="Jmd-Nd-wAb" customClass="ViewController" customModule="Avance1" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Jugadores" modalPresentationStyle="currentContext" id="Jmd-Nd-wAb" customClass="ViewController" customModule="Avance1" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="pA0-g0-6hE">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -385,13 +381,16 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Jugar"/>
                                 <connections>
-                                    <segue destination="IT0-CK-4yv" kind="showDetail" id="kLj-3B-VWk"/>
+                                    <segue destination="IT0-CK-4yv" kind="show" identifier="EmpezarPartida" id="kLj-3B-VWk"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gV7-hi-AUR">
                                 <rect key="frame" x="2" y="0.0" width="47" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <buttonConfiguration key="configuration" style="tinted" image="pencil" catalog="system" title=""/>
+                                <connections>
+                                    <segue destination="3ld-Lt-eRa" kind="presentation" identifier="MostrarOpciones" id="kfE-S7-pD0"/>
+                                </connections>
                             </button>
                             <segmentedControl opaque="NO" alpha="0.90000000000000002" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="B73-hQ-FlK">
                                 <rect key="frame" x="80" y="163" width="215" height="32"/>
@@ -417,15 +416,16 @@
                         <viewLayoutGuide key="safeArea" id="zIe-2b-JQD"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <navigationItem key="navigationItem" id="1ZR-sN-e7T"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="J0B-H7-gfe" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1136.8" y="13.943028485757123"/>
         </scene>
-        <!--View Controller-->
+        <!--Marcadores-->
         <scene sceneID="iJc-w6-NNo">
             <objects>
-                <viewController id="ndc-W1-yZo" customClass="ViewController" customModule="Avance1" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Marcadores" id="ndc-W1-yZo" customClass="ViewController" customModule="Avance1" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jSr-IS-SD5">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -442,11 +442,6 @@
                                 </segments>
                                 <color key="tintColor" name="AccentColor"/>
                             </segmentedControl>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Bs-V9-PcV">
-                                <rect key="frame" x="2" y="0.0" width="47" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <buttonConfiguration key="configuration" style="tinted" image="pencil" catalog="system" title=""/>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Mejores partidas" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QTT-9N-cdr">
                                 <rect key="frame" x="108" y="91" width="159" height="27"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -478,10 +473,10 @@
             </objects>
             <point key="canvasLocation" x="1137" y="796"/>
         </scene>
-        <!--View Controller-->
+        <!--Juego-->
         <scene sceneID="5zs-C8-ItT">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="IT0-CK-4yv" customClass="ViewController" customModule="Avance1" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Juego" modalPresentationStyle="fullScreen" id="IT0-CK-4yv" customClass="ViewController" customModule="Avance1" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Glg-K1-157">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -492,31 +487,38 @@
                                 <color key="tintColor" systemColor="systemRedColor"/>
                                 <buttonConfiguration key="configuration" style="tinted" image="questionmark" catalog="system" title=""/>
                                 <connections>
-                                    <segue destination="zp3-ck-Es7" kind="presentation" id="rUR-Oo-cCc"/>
+                                    <segue destination="zp3-ck-Es7" kind="show" identifier="MostrarReglas" id="rUR-Oo-cCc"/>
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Damas imagen" translatesAutoresizingMaskIntoConstraints="NO" id="w7N-Mz-XH9">
                                 <rect key="frame" x="0.0" y="142" width="375" height="307"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UOc-ks-4k8">
-                                <rect key="frame" x="27" y="22" width="57" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="tintColor" systemColor="systemGreenColor"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" image="arrowshape.turn.up.backward.2.fill" catalog="system" title=""/>
-                                <connections>
-                                    <segue destination="BYZ-38-t0r" kind="showDetail" id="g0D-au-Yfz"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dTf-Xy-XPV">
                                 <rect key="frame" x="280" y="41" width="47" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="tinted" title="Fin"/>
                                 <connections>
-                                    <segue destination="9Tu-pK-Ci6" kind="modal" id="9Ui-ga-TBQ"/>
+                                    <segue destination="9Tu-pK-Ci6" kind="popoverPresentation" identifier="MostrarGanador" popoverAnchorView="dTf-Xy-XPV" id="9Ui-ga-TBQ">
+                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                    </segue>
                                 </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zq7-DV-kvY">
+                                <rect key="frame" x="2" y="3" width="47" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <buttonConfiguration key="configuration" style="tinted" image="pencil" catalog="system" title=""/>
+                                <connections>
+                                    <segue destination="3ld-Lt-eRa" kind="presentation" identifier="MostrarOpciones" id="ONR-3E-rY8"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UOc-ks-4k8">
+                                <rect key="frame" x="-3" y="41" width="57" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" systemColor="systemGreenColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="arrowshape.turn.up.backward.2.fill" catalog="system" title=""/>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="jdF-wE-cuw"/>
@@ -531,7 +533,7 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="rUR-Oo-cCc"/>
-        <segue reference="g0D-au-Yfz"/>
+        <segue reference="ONR-3E-rY8"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="375" width="140" height="186"/>
