@@ -2,30 +2,39 @@
 import UIKit
 
 class ViewControllerJuego: UIViewController, UIPopoverPresentationControllerDelegate {
-
+    
+    var gameEngine: GameEngine = GameEngine()
+    
+    
+    
+    @IBOutlet weak var boardView: BoardView!
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        gameEngine.initializeGame()
+        boardView.shadowPieces = gameEngine.pieces
 
-        // Do any additional setup after loading the view.
+        
     }
     
     func adaptivePresentationStyle(for controller: UIPresentationController) -> UIModalPresentationStyle {
         return .none
     }
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let vistaPopOver = segue.destination as! ViewControllerGanador
-        vistaPopOver.popoverPresentationController?.delegate = self
-    }
 
     /*
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
+
     */
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let vistaPopOver = segue.destination as! ViewControllerGanador
+        vistaPopOver.popoverPresentationController?.delegate = self
+    }
 
 }

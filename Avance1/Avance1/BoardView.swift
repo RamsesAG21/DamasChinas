@@ -12,10 +12,13 @@ class BoardView: UIView {
     let originY: CGFloat = 10
     let cellSide: CGFloat = 28
     
+    var shadowPieces: Set<GamePiece> = Set<GamePiece>()
+    
 
     override func draw(_ rect: CGRect) {
         // Drawing code
         drawBoard()
+        drawPieces()
     }
     
     func drawBoard() {
@@ -151,8 +154,11 @@ class BoardView: UIView {
         let path = UIBezierPath(ovalIn: CGRect(x: originX - 14 + CGFloat(col) * cellSide, y: originY + CGFloat(row) * cellSide, width: cellSide, height: cellSide))
         color.setFill()
         path.fill()
-        
-        
+    }
+    
+    func drawPieces() {
+        let pieceImage = UIImage(named: "Rojo")
+        pieceImage?.draw(in: CGRect(x: originX, y: originY, width: cellSide, height: cellSide))
     }
 
 }
