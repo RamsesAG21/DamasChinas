@@ -3,10 +3,17 @@ import UIKit
 
 class ViewControllerGanador: UIViewController {
 
+    
+    @IBOutlet weak var tfNombre: UITextField!
+    @IBOutlet weak var tfDatoPunt: UITextField!
+    @IBOutlet weak var tfDatoTime: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        preferredContentSize = CGSize(width: 260, height: 430)
+        
     }
     
 

@@ -1,7 +1,7 @@
 
 import UIKit
 
-class ViewControllerJuego: UIViewController {
+class ViewControllerJuego: UIViewController, UIPopoverPresentationControllerDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -9,6 +9,14 @@ class ViewControllerJuego: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    func adaptivePresentationStyle(for controller: UIPresentationController) -> UIModalPresentationStyle {
+        return .none
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let vistaPopOver = segue.destination as! ViewControllerGanador
+        vistaPopOver.popoverPresentationController?.delegate = self
+    }
 
     /*
     // MARK: - Navigation
