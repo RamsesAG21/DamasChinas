@@ -18,6 +18,7 @@
 		F81E1C8828F7CB1E004137AB /* ViewControllerJugadores.swift in Sources */ = {isa = PBXBuildFile; fileRef = F81E1C8728F7CB1E004137AB /* ViewControllerJugadores.swift */; };
 		F81E1C8A28F7CB46004137AB /* ViewControllerJuego.swift in Sources */ = {isa = PBXBuildFile; fileRef = F81E1C8928F7CB46004137AB /* ViewControllerJuego.swift */; };
 		F81E1C8C28F7CB66004137AB /* ViewControllerGanador.swift in Sources */ = {isa = PBXBuildFile; fileRef = F81E1C8B28F7CB66004137AB /* ViewControllerGanador.swift */; };
+		F86F86152913A9AE0016348A /* BoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F86F86142913A9AE0016348A /* BoardView.swift */; };
 		F8BD669A28F479B000FA1786 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8BD669928F479B000FA1786 /* AppDelegate.swift */; };
 		F8BD669C28F479B000FA1786 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8BD669B28F479B000FA1786 /* SceneDelegate.swift */; };
 		F8BD669E28F479B000FA1786 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8BD669D28F479B000FA1786 /* ViewController.swift */; };
@@ -38,6 +39,7 @@
 		F81E1C8728F7CB1E004137AB /* ViewControllerJugadores.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerJugadores.swift; sourceTree = "<group>"; };
 		F81E1C8928F7CB46004137AB /* ViewControllerJuego.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerJuego.swift; sourceTree = "<group>"; };
 		F81E1C8B28F7CB66004137AB /* ViewControllerGanador.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerGanador.swift; sourceTree = "<group>"; };
+		F86F86142913A9AE0016348A /* BoardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardView.swift; sourceTree = "<group>"; };
 		F8BD669628F479B000FA1786 /* Avance1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Avance1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8BD669928F479B000FA1786 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F8BD669B28F479B000FA1786 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -80,6 +82,7 @@
 			children = (
 				F8BD669928F479B000FA1786 /* AppDelegate.swift */,
 				F8BD669B28F479B000FA1786 /* SceneDelegate.swift */,
+				F86F86142913A9AE0016348A /* BoardView.swift */,
 				F8BD669D28F479B000FA1786 /* ViewController.swift */,
 				1910E7BA2913C7410011B3E6 /* bgMusic.mp3 */,
 				F8BD669F28F479B000FA1786 /* Main.storyboard */,
@@ -179,6 +182,7 @@
 				F81E1C8228F7CA7F004137AB /* ViewControllerMarcadores.swift in Sources */,
 				F81E1C8828F7CB1E004137AB /* ViewControllerJugadores.swift in Sources */,
 				F8BD669A28F479B000FA1786 /* AppDelegate.swift in Sources */,
+				F86F86152913A9AE0016348A /* BoardView.swift in Sources */,
 				F81E1C8028F7CA4D004137AB /* ViewControllerReglas.swift in Sources */,
 				F81E1C8428F7CAAA004137AB /* ViewControllerOpciones.swift in Sources */,
 				F8BD669C28F479B000FA1786 /* SceneDelegate.swift in Sources */,
