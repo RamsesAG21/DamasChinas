@@ -7,7 +7,7 @@
 
 import UIKit
 
-class Puntacion: NSObject {
+class Puntuacion: NSObject {
     var Tiempo : Int
     var Nombre : String
     var Jugadas : Int
