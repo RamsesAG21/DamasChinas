@@ -482,6 +482,10 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Damas imagen" translatesAutoresizingMaskIntoConstraints="NO" id="w7N-Mz-XH9">
+                                <rect key="frame" x="-183" y="-102" width="741" height="637"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="KdO-qG-Ain"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -499,19 +503,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KM6-5t-D0z">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KM6-5t-D0z">
                                 <rect key="frame" x="18" y="606" width="41" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" systemColor="systemRedColor"/>
                                 <buttonConfiguration key="configuration" style="tinted" image="questionmark" catalog="system" title=""/>
                                 <connections>
                                     <segue destination="zp3-ck-Es7" kind="show" identifier="MostrarReglas" id="rUR-Oo-cCc"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Damas imagen" translatesAutoresizingMaskIntoConstraints="NO" id="w7N-Mz-XH9">
-                                <rect key="frame" x="0.0" y="142" width="375" height="307"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zq7-DV-kvY">
                                 <rect key="frame" x="2" y="3" width="47" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -520,16 +519,14 @@
                                     <segue destination="3ld-Lt-eRa" kind="presentation" identifier="MostrarOpciones" id="ONR-3E-rY8"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UOc-ks-4k8">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UOc-ks-4k8">
                                 <rect key="frame" x="-3" y="41" width="57" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" systemColor="systemGreenColor"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="arrowshape.turn.up.backward.2.fill" catalog="system" title=""/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dTf-Xy-XPV">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dTf-Xy-XPV">
                                 <rect key="frame" x="164" y="40" width="47" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="tinted" title="Fin"/>
                                 <connections>
@@ -538,20 +535,36 @@
                                     </segue>
                                 </connections>
                             </button>
+                            <view alpha="0.80000000000000004" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Aoz-rw-RvF" customClass="BoardView" customModule="Avance1" customModuleProvider="target">
+                                <rect key="frame" x="20" y="83" width="335" height="515"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Aoz-rw-RvF" secondAttribute="height" multiplier="67:103" id="Z9M-Xz-5aJ"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="jdF-wE-cuw"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Aoz-rw-RvF" firstAttribute="centerX" secondItem="Glg-K1-157" secondAttribute="centerX" id="3qC-0x-D9N"/>
+                            <constraint firstItem="KM6-5t-D0z" firstAttribute="top" secondItem="Aoz-rw-RvF" secondAttribute="bottom" constant="8" id="7EG-MA-XK4"/>
+                            <constraint firstItem="Aoz-rw-RvF" firstAttribute="top" secondItem="Glg-K1-157" secondAttribute="top" constant="83" id="9zt-4I-Gr6"/>
+                            <constraint firstItem="Aoz-rw-RvF" firstAttribute="top" secondItem="UOc-ks-4k8" secondAttribute="bottom" constant="8" id="CA9-lp-9R8"/>
+                            <constraint firstItem="Aoz-rw-RvF" firstAttribute="leading" secondItem="jdF-wE-cuw" secondAttribute="leading" constant="20" id="J3u-gQ-n1S"/>
+                            <constraint firstItem="Aoz-rw-RvF" firstAttribute="centerX" secondItem="dTf-Xy-XPV" secondAttribute="centerX" id="dIR-jD-5Am"/>
+                            <constraint firstAttribute="bottom" secondItem="Aoz-rw-RvF" secondAttribute="bottom" constant="69" id="v2C-Na-IWp"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="3AB-h7-I7C"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Toh-2R-PBC" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2014" y="14"/>
+            <point key="canvasLocation" x="2013.5999999999999" y="13.943028485757123"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="PBW-15-bwf"/>
-        <segue reference="evv-0K-I7l"/>
+        <segue reference="rUR-Oo-cCc"/>
+        <segue reference="ONR-3E-rY8"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="375" width="140" height="186"/>
@@ -571,6 +584,9 @@
         </systemColor>
         <systemColor name="systemGreenColor">
             <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemRedColor">
             <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
