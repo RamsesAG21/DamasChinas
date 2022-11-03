@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1910E7BB2913C7410011B3E6 /* bgMusic.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1910E7BA2913C7410011B3E6 /* bgMusic.mp3 */; };
 		19B877F42913880F0038FB90 /* Puntuacion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B877F32913880F0038FB90 /* Puntuacion.swift */; };
 		19B877F6291388480038FB90 /* Opciones.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B877F5291388480038FB90 /* Opciones.swift */; };
 		19B877F8291388790038FB90 /* Fichas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B877F7291388790038FB90 /* Fichas.swift */; };
@@ -29,6 +30,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1910E7BA2913C7410011B3E6 /* bgMusic.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = bgMusic.mp3; path = ../../../../../Downloads/bgMusic.mp3; sourceTree = "<group>"; };
 		19B877F32913880F0038FB90 /* Puntuacion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Puntuacion.swift; sourceTree = "<group>"; };
 		19B877F5291388480038FB90 /* Opciones.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Opciones.swift; sourceTree = "<group>"; };
 		19B877F7291388790038FB90 /* Fichas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fichas.swift; sourceTree = "<group>"; };
@@ -85,6 +87,7 @@
 				F8BD669928F479B000FA1786 /* AppDelegate.swift */,
 				F8BD669B28F479B000FA1786 /* SceneDelegate.swift */,
 				F8BD669D28F479B000FA1786 /* ViewController.swift */,
+				1910E7BA2913C7410011B3E6 /* bgMusic.mp3 */,
 				F8BD669F28F479B000FA1786 /* Main.storyboard */,
 				19B877F32913880F0038FB90 /* Puntuacion.swift */,
 				19B877F5291388480038FB90 /* Opciones.swift */,
@@ -167,6 +170,7 @@
 				F8BD66A628F479B000FA1786 /* LaunchScreen.storyboard in Resources */,
 				F8BD66A328F479B000FA1786 /* Assets.xcassets in Resources */,
 				F8BD66A128F479B000FA1786 /* Main.storyboard in Resources */,
+				1910E7BB2913C7410011B3E6 /* bgMusic.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
