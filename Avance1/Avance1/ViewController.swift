@@ -1,9 +1,3 @@
-//
-//  ViewController.swift
-//  Avance1
-//
-//  Created by user223065 on 10/10/22.
-//
 
 import UIKit
 

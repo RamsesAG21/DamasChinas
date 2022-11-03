@@ -1,9 +1,3 @@
-//
-//  Fichas.swift
-//  Avance1
-//
-//  Created by user222909 on 11/3/22.
-//
 
 import UIKit
 

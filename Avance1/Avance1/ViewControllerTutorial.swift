@@ -1,9 +1,3 @@
-//
-//  ViewControllerTutorial.swift
-//  Avance1
-//
-//  Created by user223065 on 10/12/22.
-//
 
 import UIKit
 
