@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -523,10 +523,6 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Damas imagen" translatesAutoresizingMaskIntoConstraints="NO" id="w7N-Mz-XH9">
-                                <rect key="frame" x="-183" y="-102" width="741" height="637"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="KdO-qG-Ain"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -570,6 +566,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="tinted" title="Fin"/>
                                 <connections>
+                                    <action selector="btFin:" destination="IT0-CK-4yv" eventType="touchUpInside" id="juA-Fc-tC8"/>
                                     <segue destination="9Tu-pK-Ci6" kind="popoverPresentation" identifier="MostrarGanador" popoverAnchorView="dTf-Xy-XPV" id="9Ui-ga-TBQ">
                                         <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
                                     </segue>
@@ -619,7 +616,6 @@
     </inferredMetricsTieBreakers>
     <resources>
         <image name="375" width="140" height="186"/>
-        <image name="Damas imagen" width="420" height="468"/>
         <image name="arrowshape.turn.up.backward.2.fill" catalog="system" width="128" height="86"/>
         <image name="pencil" catalog="system" width="128" height="113"/>
         <image name="questionmark" catalog="system" width="94" height="128"/>
