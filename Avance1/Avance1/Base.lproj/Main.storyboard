@@ -163,7 +163,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aJY-OJ-ZLc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="106" y="-701"/>
+            <point key="canvasLocation" x="105.59999999999999" y="-701.64917541229386"/>
         </scene>
         <!--Tutorial-->
         <scene sceneID="KtF-Hx-uN9">
@@ -496,8 +496,8 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="rUR-Oo-cCc"/>
-        <segue reference="kfE-S7-pD0"/>
+        <segue reference="PBW-15-bwf"/>
+        <segue reference="evv-0K-I7l"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="375" width="140" height="186"/>

@@ -1,5 +1,6 @@
 
 import UIKit
+import AVFoundation
 
 class ViewControllerOpciones: UIViewController {
     
@@ -12,10 +13,14 @@ class ViewControllerOpciones: UIViewController {
     let sound_Key = "sKey"
     let music_Key = "mKey"
     
+    var player = AVAudioPlayer()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        
         
         preferredContentSize = CGSize(width: 280, height: 390)
            
@@ -50,8 +55,10 @@ class ViewControllerOpciones: UIViewController {
     }
 
     
-    @IBAction func slMusic(_ sender: Any) {
+    @IBAction func slMusic(_ sender: UISlider) {
         userD.set(GLfloat(self.scrollMusica.value), forKey: music_Key)
+        print(sender.value)
+        player.volume = sender.value
     }
     
     @IBAction func slSound(_ sender: Any) {

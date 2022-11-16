@@ -7,18 +7,27 @@ class ViewController: UIViewController, UIPopoverPresentationControllerDelegate 
     @IBOutlet weak var btOpciones: UIButton!
     @IBOutlet weak var btnMusic: UIButton!
     
-    var bgPlayer = AVAudioPlayer()
+    var player: AVAudioPlayer?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        let audioPath = Bundle.main.path(forResource: "sound", ofType: "mp3")
+        
+        do {
+            try player = AVAudioPlayer(contentsOf: URL(fileURLWithPath: audioPath!))
+        } catch {
+            print("error sound")
+        }
+        player?.play()
+        
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
     
-    func playBGMusic (filedNamed: String){
+    /* func playBGMusic (filedNamed: String){
         let url = Bundle.main.url(forResource: filedNamed, withExtension: nil)
         guard let newUrl = url else {
             print("Could not find filed called \(filedNamed)")
@@ -33,11 +42,11 @@ class ViewController: UIViewController, UIPopoverPresentationControllerDelegate 
         catch let error as NSError{
             print(error.description)
         }
-    }
+    }*/
     
-    @IBAction func btnMusAct(_ sender: UIButton) {
+    /*@IBAction func btnMusAct(_ sender: UIButton) {
         playBGMusic(filedNamed: "bgMusic.mp3")
-    }
+    }*/
     
     
     //func opcionesActualesSonido (musica: Float, sonido: Float){
