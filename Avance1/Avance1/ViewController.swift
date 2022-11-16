@@ -12,14 +12,7 @@ class ViewController: UIViewController, UIPopoverPresentationControllerDelegate 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        let audioPath = Bundle.main.path(forResource: "sound", ofType: "mp3")
         
-        do {
-            try player = AVAudioPlayer(contentsOf: URL(fileURLWithPath: audioPath!))
-        } catch {
-            print("error sound")
-        }
-        player?.play()
         
     }
     
