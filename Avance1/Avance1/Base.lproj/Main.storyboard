@@ -54,22 +54,22 @@
                                     <segue destination="ndc-W1-yZo" kind="presentation" identifier="MostrarMarcadores" id="1ta-aS-g7H"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T9t-qx-vBI">
+                                <rect key="frame" x="0.0" y="153" width="374" height="411"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="playgg"/>
+                                <connections>
+                                    <segue destination="Jmd-Nd-wAb" kind="show" identifier="MostrarOpcionesJuego" id="ywq-6W-mzx"/>
+                                </connections>
+                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Damas chinas" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oZz-mw-nDh">
-                                <rect key="frame" x="96" y="125" width="182" height="36"/>
+                                <rect key="frame" x="95" y="60" width="182" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T9t-qx-vBI">
-                                <rect key="frame" x="105" y="258" width="164" height="200"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" image="375"/>
-                                <connections>
-                                    <segue destination="Jmd-Nd-wAb" kind="show" identifier="MostrarOpcionesJuego" id="ywq-6W-mzx"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -497,6 +497,7 @@
         <image name="Windows_Settings_app_icon" width="50" height="50"/>
         <image name="arrowshape.turn.up.backward.2.fill" catalog="system" width="128" height="86"/>
         <image name="pencil" catalog="system" width="128" height="113"/>
+        <image name="playgg" width="350" height="397"/>
         <image name="qs" width="50" height="28"/>
         <image name="st" width="50" height="50"/>
         <namedColor name="AccentColor">
