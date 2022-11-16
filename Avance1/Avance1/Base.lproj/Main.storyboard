@@ -24,16 +24,6 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kWU-A8-zl6">
-                                <rect key="frame" x="147" y="464" width="81" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="tintColor" systemColor="systemYellowColor"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Tutorial"/>
-                                <connections>
-                                    <segue destination="m1R-pc-sQu" kind="presentation" identifier="MostrarTutorial" id="qW8-3T-240"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HmX-Rp-7w4">
                                 <rect key="frame" x="18" y="606" width="41" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -43,19 +33,20 @@
                                     <segue destination="zp3-ck-Es7" kind="show" identifier="MonstrarReglas" id="PBW-15-bwf"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ckj-wy-nmQ">
-                                <rect key="frame" x="15" y="20" width="47" height="34"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ckj-wy-nmQ">
+                                <rect key="frame" x="8" y="20" width="74" height="64"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <buttonConfiguration key="configuration" style="tinted" image="pencil" catalog="system" title=""/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <buttonConfiguration key="configuration" style="tinted" image="Windows_Settings_app_icon" title=""/>
                                 <connections>
                                     <segue destination="3ld-Lt-eRa" kind="presentation" identifier="MostrarOpciones" id="evv-0K-I7l"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ney-PZ-lc9">
-                                <rect key="frame" x="307" y="20" width="52" height="34"/>
+                                <rect key="frame" x="285" y="20" width="74" height="64"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="tintColor" systemColor="systemYellowColor"/>
-                                <buttonConfiguration key="configuration" style="tinted" image="star" catalog="system" title=""/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <buttonConfiguration key="configuration" style="tinted" image="st" title=""/>
                                 <connections>
                                     <segue destination="ndc-W1-yZo" kind="presentation" identifier="MostrarMarcadores" id="1ta-aS-g7H"/>
                                 </connections>
@@ -76,6 +67,16 @@
                                 <buttonConfiguration key="configuration" style="plain" title="Music"/>
                                 <connections>
                                     <action selector="btnMusAct:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4iQ-As-Gzc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kWU-A8-zl6">
+                                <rect key="frame" x="278" y="597" width="81" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.085719311629263814" green="0.79894179894179895" blue="0.35987307489259512" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Tutorial"/>
+                                <connections>
+                                    <segue destination="m1R-pc-sQu" kind="presentation" identifier="MostrarTutorial" id="qW8-3T-240"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -436,15 +437,8 @@
                                     <segue destination="zp3-ck-Es7" kind="show" identifier="MostrarReglas" id="rUR-Oo-cCc"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zq7-DV-kvY">
-                                <rect key="frame" x="2" y="3" width="47" height="34"/>
-                                <buttonConfiguration key="configuration" style="tinted" image="pencil" catalog="system" title=""/>
-                                <connections>
-                                    <segue destination="3ld-Lt-eRa" kind="presentation" identifier="MostrarOpciones" id="ONR-3E-rY8"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UOc-ks-4k8">
-                                <rect key="frame" x="-3" y="40" width="57" height="35"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UOc-ks-4k8">
+                                <rect key="frame" x="0.0" y="13" width="57" height="35"/>
                                 <color key="tintColor" systemColor="systemGreenColor"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="arrowshape.turn.up.backward.2.fill" catalog="system" title=""/>
@@ -464,6 +458,14 @@
                                     <constraint firstAttribute="width" secondItem="Aoz-rw-RvF" secondAttribute="height" multiplier="67:103" id="Z9M-Xz-5aJ"/>
                                 </constraints>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zq7-DV-kvY">
+                                <rect key="frame" x="308" y="20" width="47" height="34"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <buttonConfiguration key="configuration" style="tinted" image="Windows_Settings_app_icon" title=""/>
+                                <connections>
+                                    <segue destination="3ld-Lt-eRa" kind="presentation" identifier="MostrarOpciones" id="ONR-3E-rY8"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="jdF-wE-cuw"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -496,15 +498,16 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="PBW-15-bwf"/>
-        <segue reference="evv-0K-I7l"/>
+        <segue reference="rUR-Oo-cCc"/>
+        <segue reference="ONR-3E-rY8"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="375" width="140" height="186"/>
+        <image name="Windows_Settings_app_icon" width="50" height="50"/>
         <image name="arrowshape.turn.up.backward.2.fill" catalog="system" width="128" height="86"/>
         <image name="pencil" catalog="system" width="128" height="113"/>
         <image name="questionmark" catalog="system" width="94" height="128"/>
-        <image name="star" catalog="system" width="128" height="116"/>
+        <image name="st" width="50" height="50"/>
         <namedColor name="AccentColor">
             <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
@@ -519,9 +522,6 @@
         </systemColor>
         <systemColor name="systemRedColor">
             <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemYellowColor">
-            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
