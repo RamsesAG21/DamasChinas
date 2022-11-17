@@ -67,3 +67,6 @@ class ViewControllerTutorial: UIViewController {
             }
         }
     }
+
+
+// Apoyo para realizar carousel: https://medium.com/swlh/swift-carousel-759800aa2952

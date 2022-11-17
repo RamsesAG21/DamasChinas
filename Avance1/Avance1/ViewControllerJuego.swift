@@ -8,6 +8,7 @@ class ViewControllerJuego: UIViewController, UIPopoverPresentationControllerDele
     var gameEngine: GameEngine = GameEngine()
     var puntos = 0
     var tiempo = "20:15"
+    var nombre = ""
     
     
     @IBOutlet weak var boardView: BoardView!
@@ -71,12 +72,14 @@ class ViewControllerJuego: UIViewController, UIPopoverPresentationControllerDele
 
                 let datosAction = UIAlertAction(
 
-                title: "Guardar", style: UIAlertAction.Style.default) {
+                    title: "Guardar", style: UIAlertAction.Style.default) {
                     (action) -> Void in
 
                     if let name = nameTextField?.text {
 
                         // pone el nombre del tf de la alerta en el tf de la vista
+                        
+                        self.nombre = name
 
                         //self.tfNombre.text = name
 
