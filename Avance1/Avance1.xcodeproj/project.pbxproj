@@ -10,6 +10,8 @@
 		19B877F42913880F0038FB90 /* Puntuacion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B877F32913880F0038FB90 /* Puntuacion.swift */; };
 		19B877F6291388480038FB90 /* Opciones.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B877F5291388480038FB90 /* Opciones.swift */; };
 		19B877F8291388790038FB90 /* Fichas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B877F7291388790038FB90 /* Fichas.swift */; };
+		19D371CB29258D1000073F99 /* CollectionViewCellCarousel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D371CA29258D1000073F99 /* CollectionViewCellCarousel.swift */; };
+		19D371CD29258F2700073F99 /* CarouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D371CC29258F2700073F99 /* CarouselView.swift */; };
 		D4BE1D7B29247B220064AD2A /* Sound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D4BE1D7A29247B220064AD2A /* Sound.mp3 */; };
 		F81E1C8028F7CA4D004137AB /* ViewControllerReglas.swift in Sources */ = {isa = PBXBuildFile; fileRef = F81E1C7F28F7CA4D004137AB /* ViewControllerReglas.swift */; };
 		F81E1C8228F7CA7F004137AB /* ViewControllerMarcadores.swift in Sources */ = {isa = PBXBuildFile; fileRef = F81E1C8128F7CA7F004137AB /* ViewControllerMarcadores.swift */; };
@@ -32,6 +34,8 @@
 		19B877F32913880F0038FB90 /* Puntuacion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Puntuacion.swift; sourceTree = "<group>"; };
 		19B877F5291388480038FB90 /* Opciones.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Opciones.swift; sourceTree = "<group>"; };
 		19B877F7291388790038FB90 /* Fichas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fichas.swift; sourceTree = "<group>"; };
+		19D371CA29258D1000073F99 /* CollectionViewCellCarousel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCellCarousel.swift; sourceTree = "<group>"; };
+		19D371CC29258F2700073F99 /* CarouselView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselView.swift; sourceTree = "<group>"; };
 		D4BE1D7A29247B220064AD2A /* Sound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Sound.mp3; path = ../../../../../Downloads/Sound.mp3; sourceTree = "<group>"; };
 		F81E1C7F28F7CA4D004137AB /* ViewControllerReglas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerReglas.swift; sourceTree = "<group>"; };
 		F81E1C8128F7CA7F004137AB /* ViewControllerMarcadores.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerMarcadores.swift; sourceTree = "<group>"; };
@@ -86,6 +90,8 @@
 				F8BD669B28F479B000FA1786 /* SceneDelegate.swift */,
 				F8BD669D28F479B000FA1786 /* ViewController.swift */,
 				F8BD669F28F479B000FA1786 /* Main.storyboard */,
+				19D371CA29258D1000073F99 /* CollectionViewCellCarousel.swift */,
+				19D371CC29258F2700073F99 /* CarouselView.swift */,
 				19B877F32913880F0038FB90 /* Puntuacion.swift */,
 				19B877F5291388480038FB90 /* Opciones.swift */,
 				19B877F7291388790038FB90 /* Fichas.swift */,
@@ -178,12 +184,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				19D371CB29258D1000073F99 /* CollectionViewCellCarousel.swift in Sources */,
 				F81E1C8628F7CAD6004137AB /* ViewControllerTutorial.swift in Sources */,
 				19B877F8291388790038FB90 /* Fichas.swift in Sources */,
 				19B877F6291388480038FB90 /* Opciones.swift in Sources */,
 				F8BD669E28F479B000FA1786 /* ViewController.swift in Sources */,
 				F81E1C8228F7CA7F004137AB /* ViewControllerMarcadores.swift in Sources */,
 				F81E1C8828F7CB1E004137AB /* ViewControllerJugadores.swift in Sources */,
+				19D371CD29258F2700073F99 /* CarouselView.swift in Sources */,
 				F8BD669A28F479B000FA1786 /* AppDelegate.swift in Sources */,
 				F86F86152913A9AE0016348A /* BoardView.swift in Sources */,
 				F81E1C8028F7CA4D004137AB /* ViewControllerReglas.swift in Sources */,
