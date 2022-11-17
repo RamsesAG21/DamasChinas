@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -371,12 +371,26 @@
                                     <constraint firstAttribute="width" secondItem="Aoz-rw-RvF" secondAttribute="height" multiplier="67:103" id="Z9M-Xz-5aJ"/>
                                 </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KM6-5t-D0z">
-                                <rect key="frame" x="16" y="613" width="74" height="42"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KM6-5t-D0z">
+                                <rect key="frame" x="18" y="606" width="74" height="42"/>
                                 <color key="tintColor" systemColor="systemRedColor"/>
                                 <buttonConfiguration key="configuration" style="tinted" image="qs" title=""/>
                                 <connections>
                                     <segue destination="zp3-ck-Es7" kind="show" identifier="MostrarReglas" id="rUR-Oo-cCc"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Red" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F0u-YQ-0Yg">
+                                <rect key="frame" x="169" y="608" width="41" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nFo-h7-82w">
+                                <rect key="frame" x="280" y="605" width="68" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Reset"/>
+                                <connections>
+                                    <action selector="btReset:" destination="IT0-CK-4yv" eventType="touchUpInside" id="4el-hp-Gec"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -390,11 +404,17 @@
                             <constraint firstItem="Aoz-rw-RvF" firstAttribute="top" secondItem="UOc-ks-4k8" secondAttribute="bottom" constant="8" id="CA9-lp-9R8"/>
                             <constraint firstItem="Aoz-rw-RvF" firstAttribute="leading" secondItem="jdF-wE-cuw" secondAttribute="leading" constant="20" id="J3u-gQ-n1S"/>
                             <constraint firstItem="Zq7-DV-kvY" firstAttribute="top" secondItem="jdF-wE-cuw" secondAttribute="top" constant="3" id="MTy-JC-TPv"/>
+                            <constraint firstItem="F0u-YQ-0Yg" firstAttribute="leading" secondItem="KM6-5t-D0z" secondAttribute="trailing" constant="77" id="RC2-b0-wtD"/>
                             <constraint firstItem="UOc-ks-4k8" firstAttribute="bottom" secondItem="dTf-Xy-XPV" secondAttribute="bottom" id="T0q-cw-QYO"/>
+                            <constraint firstItem="nFo-h7-82w" firstAttribute="top" secondItem="Aoz-rw-RvF" secondAttribute="bottom" constant="7" id="U6d-mF-lEE"/>
                             <constraint firstItem="UOc-ks-4k8" firstAttribute="centerY" secondItem="dTf-Xy-XPV" secondAttribute="centerY" id="Via-gk-DB5"/>
+                            <constraint firstItem="F0u-YQ-0Yg" firstAttribute="top" secondItem="Aoz-rw-RvF" secondAttribute="bottom" constant="10" id="WAb-l4-VeF"/>
                             <constraint firstItem="dTf-Xy-XPV" firstAttribute="top" secondItem="jdF-wE-cuw" secondAttribute="top" constant="40" id="XmK-sF-sai"/>
+                            <constraint firstItem="jdF-wE-cuw" firstAttribute="trailing" secondItem="nFo-h7-82w" secondAttribute="trailing" constant="27" id="YV4-Uc-XFt"/>
                             <constraint firstItem="Aoz-rw-RvF" firstAttribute="centerX" secondItem="dTf-Xy-XPV" secondAttribute="centerX" id="dIR-jD-5Am"/>
                             <constraint firstItem="KM6-5t-D0z" firstAttribute="leading" secondItem="jdF-wE-cuw" secondAttribute="leading" constant="18" id="eMi-2x-iHG"/>
+                            <constraint firstItem="nFo-h7-82w" firstAttribute="leading" secondItem="F0u-YQ-0Yg" secondAttribute="trailing" constant="70" id="iT8-ob-IOB"/>
+                            <constraint firstItem="nFo-h7-82w" firstAttribute="leading" secondItem="F0u-YQ-0Yg" secondAttribute="trailing" constant="70" id="qnf-iP-uhy"/>
                             <constraint firstItem="Zq7-DV-kvY" firstAttribute="centerX" secondItem="UOc-ks-4k8" secondAttribute="centerX" id="tVf-VL-FhG"/>
                             <constraint firstItem="Zq7-DV-kvY" firstAttribute="leading" secondItem="jdF-wE-cuw" secondAttribute="leading" constant="2" id="twq-Am-9YH"/>
                             <constraint firstAttribute="bottom" secondItem="Aoz-rw-RvF" secondAttribute="bottom" constant="69" id="v2C-Na-IWp"/>
@@ -403,6 +423,7 @@
                     <navigationItem key="navigationItem" id="3AB-h7-I7C"/>
                     <connections>
                         <outlet property="boardView" destination="Aoz-rw-RvF" id="gQ5-ga-sR5"/>
+                        <outlet property="lbJugador" destination="F0u-YQ-0Yg" id="TIN-NP-a3q"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Toh-2R-PBC" sceneMemberID="firstResponder"/>
@@ -411,8 +432,8 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="PBW-15-bwf"/>
-        <segue reference="evv-0K-I7l"/>
+        <segue reference="rUR-Oo-cCc"/>
+        <segue reference="ONR-3E-rY8"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Windows_Settings_app_icon" width="50" height="50"/>

@@ -82,9 +82,9 @@ class BoardView: UIView {
         }
         
         movingImage = nil
-        
         fromCol = nil
         fromRow = nil
+        setNeedsDisplay()
     }
     
     
@@ -92,7 +92,14 @@ class BoardView: UIView {
     func drawPieces() {
         for piece in shadowPieces where !(fromCol == piece.col && fromRow == piece.row ){
             let pieceImage = UIImage(named: piece.imgName)
-            pieceImage?.draw(in: CGRect(x: originX + CGFloat(piece.col) * cellSide, y: originY + CGFloat(piece.row) * cellSide, width: cellSide, height: cellSide))
+            
+            if (piece.row % 2 == 1){
+                pieceImage?.draw(in: CGRect(x: (originX + CGFloat(piece.col) * cellSide) - cellSide/2, y: originY + CGFloat(piece.row) * cellSide, width: cellSide, height: cellSide))
+            }
+            else{
+                pieceImage?.draw(in: CGRect(x: originX + CGFloat(piece.col) * cellSide, y: originY + CGFloat(piece.row) * cellSide, width: cellSide, height: cellSide))
+            }
+            
             
         }
         movingImage?.draw(in: CGRect(x: movingPieceX - cellSide/2 , y: movingPieceY - cellSide/2, width: cellSide, height: cellSide))
@@ -106,8 +113,8 @@ class BoardView: UIView {
 //                drawCircle(col: 0, row: row, color: UIColor.white)
 //            }
 //            else{
-//                drawCircle2(col: 0, row: row, color: UIColor.white)
-//                drawCircle2(col: 1, row: row, color: UIColor.white)
+//                drawCircle(col: 0, row: row, color: UIColor.white)
+//                drawCircle(col: 1, row: row, color: UIColor.white)
 //
 //            }
 //        }

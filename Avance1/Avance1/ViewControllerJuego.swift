@@ -3,17 +3,6 @@ import UIKit
 
 class ViewControllerJuego: UIViewController, UIPopoverPresentationControllerDelegate, GameDelegate {
     
-    func pieceAt(col: Int, row: Int) -> GamePiece? {
-        return gameEngine.pieceAt(col: col, row: row) 
-    }
-    
-    
-    func movePiece(fromCol: Int, fromRow: Int, toCol: Int, toRow: Int) {
-        gameEngine.movePiece(fromCol: fromCol, fromRow: fromRow, toCol: toCol, toRow: toRow)
-        
-        boardView.shadowPieces = gameEngine.pieces
-        boardView.setNeedsDisplay()
-    }
     
     
     var gameEngine: GameEngine = GameEngine()
@@ -22,8 +11,7 @@ class ViewControllerJuego: UIViewController, UIPopoverPresentationControllerDele
     
     
     @IBOutlet weak var boardView: BoardView!
-    
-    
+    @IBOutlet weak var lbJugador: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,6 +25,34 @@ class ViewControllerJuego: UIViewController, UIPopoverPresentationControllerDele
 
         
     }
+    
+    
+    func pieceAt(col: Int, row: Int) -> GamePiece? {
+        return gameEngine.pieceAt(col: col, row: row)
+    }
+    
+    
+    func movePiece(fromCol: Int, fromRow: Int, toCol: Int, toRow: Int) {
+        gameEngine.movePiece(fromCol: fromCol, fromRow: fromRow, toCol: toCol, toRow: toRow)
+        
+        boardView.shadowPieces = gameEngine.pieces
+        boardView.setNeedsDisplay()
+        
+        if gameEngine.redTurn {
+            lbJugador.text = "Red"
+        }
+        else{
+            lbJugador.text = "Green"
+        }
+    }
+    
+    @IBAction func btReset(_ sender: UIButton) {
+        gameEngine.initializeGame()
+        boardView.shadowPieces = gameEngine.pieces
+        boardView.setNeedsDisplay()
+        lbJugador.text = "Red"
+    }
+    
     
     /*func adaptivePresentationStyle(for controller: UIPresentationController) -> UIModalPresentationStyle {
         return .none
