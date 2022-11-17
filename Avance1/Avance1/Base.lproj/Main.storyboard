@@ -362,6 +362,9 @@
                                 <color key="tintColor" systemColor="systemGreenColor"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="arrowshape.turn.up.backward.2.fill" catalog="system" title=""/>
+                                <connections>
+                                    <segue destination="qH1-OZ-BKK" kind="unwind" unwindAction="deVistaJuegoWithSegue:" id="dlp-t7-WDQ"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dTf-Xy-XPV">
                                 <rect key="frame" x="164" y="40" width="47" height="35"/>
@@ -434,13 +437,14 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Toh-2R-PBC" sceneMemberID="firstResponder"/>
+                <exit id="qH1-OZ-BKK" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="2013.5999999999999" y="13.943028485757123"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="rUR-Oo-cCc"/>
-        <segue reference="ONR-3E-rY8"/>
+        <segue reference="PBW-15-bwf"/>
+        <segue reference="evv-0K-I7l"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Windows_Settings_app_icon" width="50" height="50"/>

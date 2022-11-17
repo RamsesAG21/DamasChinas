@@ -55,6 +55,9 @@ class ViewController: UIViewController, UIPopoverPresentationControllerDelegate 
     //        vistaOpciones.popoverPresentationController?.delegate = self
     //    }
 
+    @IBAction func deVistaJuego(segue: UIStoryboardSegue!){
+        
+    }
 
 }
 
