@@ -111,36 +111,36 @@ struct GameEngine {
         redTurn = true
         pieces.removeAll()
         
-        pieces.insert(GamePiece(col: 4, row: 0, imgName: "Rojo", isRed: false, ID: 1))
+        pieces.insert(GamePiece(col: 4, row: 0, imgName: "canv", isRed: false, ID: 1))
         
-        pieces.insert(GamePiece(col: 4, row: 1, imgName: "Rojo", isRed: false, ID: 2))
-        pieces.insert(GamePiece(col: 5, row: 1, imgName: "Rojo", isRed: false, ID: 3))
+        pieces.insert(GamePiece(col: 4, row: 1, imgName: "canv", isRed: false, ID: 2))
+        pieces.insert(GamePiece(col: 5, row: 1, imgName: "canv", isRed: false, ID: 3))
         
-        pieces.insert(GamePiece(col: 3, row: 2, imgName: "Rojo", isRed: false, ID: 4))
-        pieces.insert(GamePiece(col: 4, row: 2, imgName: "Rojo", isRed: false, ID: 5))
-        pieces.insert(GamePiece(col: 5, row: 2, imgName: "Rojo", isRed: false, ID: 6))
-        
-        
-        pieces.insert(GamePiece(col: 3, row: 3, imgName: "Rojo", isRed: false, ID: 7))
-        pieces.insert(GamePiece(col: 4, row: 3, imgName: "Rojo", isRed: false, ID: 8))
-        pieces.insert(GamePiece(col: 5, row: 3, imgName: "Rojo", isRed: false, ID: 9))
-        pieces.insert(GamePiece(col: 6, row: 3, imgName: "Rojo", isRed: false, ID: 10))
+        pieces.insert(GamePiece(col: 3, row: 2, imgName: "canv", isRed: false, ID: 4))
+        pieces.insert(GamePiece(col: 4, row: 2, imgName: "canv", isRed: false, ID: 5))
+        pieces.insert(GamePiece(col: 5, row: 2, imgName: "canv", isRed: false, ID: 6))
         
         
-        pieces.insert(GamePiece(col: 4, row: 16, imgName: "Rojo", isRed: true, ID: 11))
-        
-        pieces.insert(GamePiece(col: 4, row: 15, imgName: "Rojo", isRed: true, ID: 12))
-        pieces.insert(GamePiece(col: 5, row: 15, imgName: "Rojo", isRed: true, ID: 13))
-        
-        pieces.insert(GamePiece(col: 3, row: 14, imgName: "Rojo", isRed: true, ID: 14))
-        pieces.insert(GamePiece(col: 4, row: 14, imgName: "Rojo", isRed: true, ID: 15))
-        pieces.insert(GamePiece(col: 5, row: 14, imgName: "Rojo", isRed: true, ID: 16))
+        pieces.insert(GamePiece(col: 3, row: 3, imgName: "canv", isRed: false, ID: 7))
+        pieces.insert(GamePiece(col: 4, row: 3, imgName: "canv", isRed: false, ID: 8))
+        pieces.insert(GamePiece(col: 5, row: 3, imgName: "canv", isRed: false, ID: 9))
+        pieces.insert(GamePiece(col: 6, row: 3, imgName: "canv", isRed: false, ID: 10))
         
         
-        pieces.insert(GamePiece(col: 3, row: 13, imgName: "Rojo", isRed: true, ID: 17))
-        pieces.insert(GamePiece(col: 4, row: 13, imgName: "Rojo", isRed: true, ID: 18))
-        pieces.insert(GamePiece(col: 5, row: 13, imgName: "Rojo", isRed: true, ID: 19))
-        pieces.insert(GamePiece(col: 6, row: 13, imgName: "Rojo", isRed: true, ID: 20))
+        pieces.insert(GamePiece(col: 4, row: 16, imgName: "cana", isRed: true, ID: 11))
+        
+        pieces.insert(GamePiece(col: 4, row: 15, imgName: "cana", isRed: true, ID: 12))
+        pieces.insert(GamePiece(col: 5, row: 15, imgName: "cana", isRed: true, ID: 13))
+        
+        pieces.insert(GamePiece(col: 3, row: 14, imgName: "cana", isRed: true, ID: 14))
+        pieces.insert(GamePiece(col: 4, row: 14, imgName: "cana", isRed: true, ID: 15))
+        pieces.insert(GamePiece(col: 5, row: 14, imgName: "cana", isRed: true, ID: 16))
+        
+        
+        pieces.insert(GamePiece(col: 3, row: 13, imgName: "cana", isRed: true, ID: 17))
+        pieces.insert(GamePiece(col: 4, row: 13, imgName: "cana", isRed: true, ID: 18))
+        pieces.insert(GamePiece(col: 5, row: 13, imgName: "cana", isRed: true, ID: 19))
+        pieces.insert(GamePiece(col: 6, row: 13, imgName: "cana", isRed: true, ID: 20))
 
     }
 }
