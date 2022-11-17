@@ -1,7 +1,20 @@
 
 import UIKit
 
-class ViewControllerJuego: UIViewController, UIPopoverPresentationControllerDelegate {
+class ViewControllerJuego: UIViewController, UIPopoverPresentationControllerDelegate, GameDelegate {
+    
+    func pieceAt(col: Int, row: Int) -> GamePiece? {
+        return gameEngine.pieceAt(col: col, row: row) 
+    }
+    
+    
+    func movePiece(fromCol: Int, fromRow: Int, toCol: Int, toRow: Int) {
+        gameEngine.movePiece(fromCol: fromCol, fromRow: fromRow, toCol: toCol, toRow: toRow)
+        
+        boardView.shadowPieces = gameEngine.pieces
+        boardView.setNeedsDisplay()
+    }
+    
     
     var gameEngine: GameEngine = GameEngine()
     var puntos = 0
@@ -15,8 +28,12 @@ class ViewControllerJuego: UIViewController, UIPopoverPresentationControllerDele
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        boardView.gameDelegate = self
+        
         gameEngine.initializeGame()
         boardView.shadowPieces = gameEngine.pieces
+        boardView.setNeedsDisplay()
+        
 
         
     }

@@ -20,14 +20,14 @@ class ViewControllerOpciones: UIViewController {
 
         // Do any additional setup after loading the view.
         
-        let audioPath = Bundle.main.path(forResource: "Sound", ofType: "mp3")
-        
-        do {
-            try player = AVAudioPlayer(contentsOf: URL(fileURLWithPath: audioPath!))
-        }
-        catch {
-            print("error sound")
-        }
+//        let audioPath = Bundle.main.path(forResource: "Sound", ofType: "mp3")
+//        
+//        do {
+//            try player = AVAudioPlayer(contentsOf: URL(fileURLWithPath: audioPath!))
+//        }
+//        catch {
+//            print("error sound")
+//        }
         player.play()
         
         preferredContentSize = CGSize(width: 280, height: 390)
