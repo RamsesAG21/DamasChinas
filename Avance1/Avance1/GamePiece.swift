@@ -7,6 +7,7 @@ struct GamePiece: Hashable {
     let row: Int
     let imgName: String
     let isRed: Bool // true = rojo, falso = verde
+    let ID: Int
 }
 
 
